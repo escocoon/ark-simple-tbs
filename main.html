@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>Role play TBS Battle</title>
+    <link rel="stylesheet" type="text/css" href="table.css"/>
+    <link rel="stylesheet" type="text/css" href="button.css"/>
+    <link rel="stylesheet" type="text/css" href="char.css"/>
+    <link rel="stylesheet" type="text/css" href="modal.css"/>
+    <link rel="stylesheet" type="text/css" href="charListTable.css"/>
+
+    <script type="text/javascript" src="skills.js"></script>
+    <script type="text/javascript" src="chars.js"></script>
+</head>
+
+<body>
+    <center><h1>Battle</h1></center>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td><img id="char1-img" src="img/char-placeholder.png" style="width: 200px; height: 200px;">
+                <p id="char1-name" class="charName">Char 1</p>
+            </td>
+                <td></td>
+                <td><img id="char2-img" src="img/char-placeholder.png" style="width: 200px; height: 200px;">
+                <p id="char2-name" class="charName">Char 2</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="char1" id="char1-health">Health</td>
+                <td id ="dmgMessage"></td>
+                <td class="char2" id="char2-health">Health</td>
+            </tr>
+            <tr>
+                <td><div id="Progress_Status">
+                    <div id="char1-healthBar"></div> 
+                  </div> </td></td>
+                  <td id="totalDamage" class="damage"></td>
+                <td><div id="Progress_Status"> 
+                    <div id="char2-healthBar"></div> 
+                  </div> </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul id="char1Skills">
+
+                    </ul>
+                </td>
+                <td></td>
+                <td>
+                    <ul  id="char2Skills">
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn-attack" id="attackButton1" onclick="attack()">Attack</button></td>
+                <td></td>
+                <td><button class="btn-attack" id="attackButton2" onclick="attack()">Attack</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <center><button class="trigger btn-info" id="selectChar1Btn" onclick="selectChar1()">Select 1st Character</button></center>
+    <center><button class="trigger btn-info" id="reloadBtn" onclick="window.location.reload()">Reload</button></center>
+
+
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button">×</span>
+        <h1 id="selectCharHead">Select First Character</h1>
+        <table class="table-char">
+            <thead>
+                <tr>
+                    <td class="noCol">No.</td>
+                    <td>Name</td>
+                    <td>Description</td>
+                    <td>Base Att(Min-Max)</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="list">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="modal.js"></script>
+</html>

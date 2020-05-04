@@ -1,0 +1,24 @@
+.table-char {
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.table-char thead {
+    background-color: #222f3e;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+
+.table-char .noCol {
+    width: 5%;
+}
+
+.table-char tbody tr:nth-child(odd){ 
+    background: #c8d6e5;
+}
+.table-char tbody tr:nth-child(even){
+    background: #dae5f4;
+}

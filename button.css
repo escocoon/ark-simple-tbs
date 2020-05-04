@@ -1,0 +1,33 @@
+.btn-attack {
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(255, 50, 50); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .btn-attack:hover {
+      background-color:  rgb(255, 87, 87);
+  }
+
+  .btn-info {
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(111, 50, 255); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .btn-info:hover {
+      background-color:  rgb(137, 116, 255);
+  }

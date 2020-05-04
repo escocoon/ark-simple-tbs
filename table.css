@@ -1,0 +1,47 @@
+
+h1{
+    font-family: sans-serif;
+    align-self: center;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    border: rgb(0, 0, 0);
+    width: 50%;
+}
+
+td{
+    text-align: center;
+    align-content: center;
+    width: 200px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+tr{
+    width: max-content;
+    padding: 20%;
+}
+
+thead{
+    color: rgb(0, 0, 0);
+}
+
+tbody{
+    color: rgb(0, 0, 0);
+}
+
+.middleCol{
+    padding: 20px;
+}
+
+.charCard{
+    width: 40%;
+    font-style: normal;
+}
+
+.damage {
+    font-weight: bold;
+    color: red;
+}
